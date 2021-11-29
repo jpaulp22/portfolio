@@ -1,0 +1,173 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#main-nav{
+	font-family: 'Poppins', sans-serif;
+	font-size: calc(1.4vw + 1.3em);
+	text-align: right;
+	background-color: black;
+	border-bottom: 2px solid white;
+	word-spacing: 5px;
+	padding-right: 1rem;
+}
+
+#mob-navbar{
+  visibility: hidden;
+  position: absolute;
+}
+
+#topnav{
+  position: relative;
+}
+
+#myLinks{
+  display: none;
+  text-align: left;
+}
+
+#myLinks a{
+  color: #fff;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  background-color: #000;
+  font-family: 'Poppins', sans-serif;
+}
+
+#icon{
+  display: block;
+  position: absolute;
+  right: 15px;
+  color: #000;
+  top: 20px;
+  transform: scale(2);
+}
+
+a:link{
+	color: white;
+	text-decoration: none;
+}
+
+a:visited{
+	color: white;
+	text-decoration: none;
+}
+
+a:hover{
+	color: dimgray;
+	text-decoration: none;
+}
+
+a:selectedlink{
+	color: dimgray;
+	text-decoration: none;
+}
+
+#site{
+  font-family: 'Khula', sans-serif;
+  width: 94%;
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+
+#jp{
+  display: block;
+  vertical-align: middle;
+}
+
+#bio{
+  margin: 60px 0 60px 0;
+}
+
+h1{
+  text-decoration: overline #158c44;
+  text-align: left;
+}
+
+p{
+  margin: 15px 0 0 0;
+  margin-left: 8vw;
+  margin-right: 8vw;
+  text-align: justify;
+  font-size: calc(.4vw + 1em);
+}
+
+#links{
+  margin: 60px 0 60px 0;
+}
+
+#contact-cont{
+  margin: 60px 0 60px 0;
+}
+
+#form-cont{
+  width: 50%;
+  background-color: #000;
+  margin: 15px auto 0 auto;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+form > input, form > textarea{
+  display: block;
+  font-family: 'Khula', sans-serif;
+  font-size: 25px;
+  border-radius: 10px;
+  margin: 15px 0 15px 0;
+  padding: 5px 0 5px 0;
+  text-indent: 5px;
+  width: 100%;
+}
+
+#submitbtn{
+  display: block;
+  border-radius: 10px;
+  font-size: 25px;
+  padding: 10px 30px 10px 30px;
+  border: none;
+  color: #fff;
+  background-color: #158c44;
+}
+
+.ima2{
+	border-radius: 20px;
+	margin: 15px 15px 0 0;;
+    width: 4%;
+}
+
+@media (max-width: 992px){
+  #mob-navbar{
+    visibility: visible;
+    position: relative;
+  }
+  
+  #main-nav{
+    visibility: hidden;
+    position: absolute;
+  }
+  
+  #myLinks a{
+    font-size: 20px;
+  }
+  
+  .ima2{
+    width: 10%;
+  }
+
+  form > input, form > textarea{
+    font-size: 20px;
+  }
+
+  #submitbtn{
+    display: block;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 30px 10px 30px;
+    border: none;
+    color: #fff;
+    background-color: #158c44;
+  }
+}

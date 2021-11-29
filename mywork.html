@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" lang="en" content="Jean Paul Perez" />
+		<meta name="subject" lang="en" content="Personal Works" />
+		<meta name="description" lang="en" content="Works done during free time" />
+		<meta name="keywords" lang="en" content="personal works, illustrator, photoshop, design, art" />
+		<link href="ssmyWork.css" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+		<title>Personal Works</title>
+	</head>
+
+	<body>
+		<nav>
+			<a href="index.html" title="Homepage">HOME</a>
+			<a href="gallery.html" title="Gallery">GALLERY</a>
+			<a href="music.html" title="Music">MUSIC</a>
+			<a href="work.html" title="Work">WORK</a>
+			<a href="about.html" title="About">ABOUT</a>
+		</nav>
+		
+		<div class="container">
+			<div>
+				<img src="Images/Work/iartPosterV3.png" alt="Poster contest for Hunter College's iArt Expo using Adobe Illustrator" onClick="openModal();currentlySlide(1)" target="_blank" id="pers1">
+			</div>
+			<div>
+				<img src="Images/Work/wasd-ai-104-8.28.2015-[Converted].jpg" alt="Keyboard layout design using Adobe Illustrator. Needed to include both Atletico Nacional's color scheme as well as the colors of Colombia." onClick="openModal();currentSlide(1)" target="_blank" id="pers2">
+			</div>
+		</div>
+		
+		<div id="myModal" class="modal">
+			<span class="close">&times;</span>
+			<img class="modal-content" alt="" id="img01">
+			<div id="caption"></div>
+		</div>
+		
+		<script>
+			var modal = document.getElementById("myModal");
+			var img = document.getElementById("pers1");
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+			img.onclick = function()
+			{
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+			}
+			var span = document.getElementsByClassName("close")[0];
+			span.onclick = function() 
+			{ 
+				modal.style.display = "none";
+			}
+		</script>
+		
+		<script>
+			var modal = document.getElementById("myModal");
+			var img = document.getElementById("pers2");
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+			img.onclick = function()
+			{
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+			}
+			var span = document.getElementsByClassName("close")[0];
+			span.onclick = function() 
+			{ 
+				modal.style.display = "none";
+			}
+		</script>
+	</body>
+</html>

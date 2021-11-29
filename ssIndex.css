@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url("Images/portalimg.JPG");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #000;
+  overflow: hidden;
+}
+
+#main-nav{
+  font-family: 'Poppins', sans-serif;
+  font-size: calc(1.4vw + 1.3em);
+  text-align: right;
+  background-color: #000;
+  border-bottom: 2px solid #fff;
+  word-spacing: 5px;
+  padding-right: 1rem;
+}
+
+#mob-navbar{
+  visibility: hidden;
+  position: absolute;
+}
+
+#topnav{
+  position: relative;
+}
+
+#myLinks{
+  display: none;
+}
+
+#myLinks a{
+  color: #fff;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  background-color: #000;
+  font-family: 'Poppins', sans-serif;
+}
+
+#icon{
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  color: #fff;
+  transform: scale(2);
+}
+
+#mainLink{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: calc(1.5vw + 1.4em);
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.3)
+}
+
+a:link{
+	color: white;
+	text-decoration: none;
+}
+
+a:visited{
+	color: white;
+	text-decoration: none;
+}
+
+a:hover{
+	color: dimgray;
+	text-decoration: none; 
+}
+
+a:selectedlink{
+	color: dimgray;
+	text-decoration: none;
+}
+
+@media (max-width: 992px){
+  #mob-navbar{
+    visibility: visible;
+    position: relative;
+  }
+    
+  #main-nav{
+    visibility: hidden;
+    position: absolute;
+  }
+  
+  #myLinks a{
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" lang="en" content="Jean Paul Perez-Saldarriaga" />
+    <meta name="subject" lang="en" content="Arepalicious Print Design" />
+    <meta name="description" lang="en" content="Print design projects for Arepalicious by Jean Paul Perez-Saldarriaga." />
+    <title>Arepalicious</title>
+    <link href="ssArepaPrint.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Khula&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="Images/favs/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="Images/favs/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="Images/favs/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="Images/favs/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="Images/favs/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="Images/favs/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="Images/favs/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="Images/favs/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/favs/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="Images/favs/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="Images/favs/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favs/favicon-16x16.png">
+    <link rel="manifest" href="Images/favs/manifest.json">
+    <meta name="theme-color" content="#333">
+    <meta name="msapplication-TileColor" content="#333">
+    <meta name="msapplication-TileImage" content="images/favs/ms-icon-144x144.png">
+  </head>
+  
+  <body>
+  <nav id="main-nav">
+      <a href="../index.html" title="Portal">HOME</a>
+      <a href="../projects.html" title="Projects">PROJECTS</a>
+      <a href="../gallery.html" title="Gallery">GALLERY</a>
+      <a href="../music.html" title="Music">MUSIC</a>
+      <a href="../about.html" title="About">ABOUT</a>
+    </nav>
+    
+    <nav id="mob-navbar">
+      <div id="topnav">
+        <div id="myLinks">
+          <a href="../index.html" title="Portal">HOME</a>
+          <a href="../projects.html" title="Projects">PROJECTS</a>
+          <a href="../gallery.html" title="Gallery">GALLERY</a>
+          <a href="../music.html" title="Music">MUSIC</a>
+          <a href="../about.html" title="About">ABOUT</a>
+        </div>
+        <a href="javascript:void(0);" id="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+      </div>
+    </nav>
+    
+    <div id="site">
+      <div id="grid-container">
+        <div class="entry"><img src="../Images/projects/print/tacotuesdayLegacyv2V1Print.png" alt="Taco Tuesday"></div>
+        <div class="entry"><img src="../Images/projects/print/valentinesdaymenuENG.png" alt="Valentine's Day Special"></div>
+        <div class="entry"><img src="../Images/projects/print/SummerColdMenuV4.jpg" alt="Summertime Menu A"></div>
+        <div class="entry"><img src="../Images/projects/print/SummertimeWarm.jpg" alt="Summertime Menu B"></div>
+        <div class="entry"><img src="../Images/projects/print/qnmfood.jpg" alt="Queens Night Market Food Menu"></div>
+        <div class="entry"><img src="../Images/projects/print/qnmdrinks.jpg" alt="Queens Night Market Drinks Menu"></div>
+      </div>
+    </div>
+    
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        var y = document.getElementById("icon");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+          y.style.color = "#000";
+          y.style.top = "-40px";
+        } else {
+          x.style.display = "block";
+          y.style.color = "#fff";
+          y.style.top = "20px";
+        }
+      }
+    </script>
+  </body>

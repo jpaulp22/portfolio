@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#main-nav{
+	font-family: 'Poppins', sans-serif;
+	font-size: calc(1.4vw + 1.3em);
+	text-align: right;
+	background-color: black;
+	border-bottom: 2px solid white;
+	word-spacing: 5px;
+	padding-right: 1rem;
+}
+
+#mob-navbar{
+  visibility: hidden;
+  position: absolute;
+}
+
+#topnav{
+  position: relative;
+}
+
+#myLinks{
+  display: none;
+  text-align: left;
+}
+
+#myLinks a{
+  color: #fff;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  background-color: #000;
+  font-family: 'Poppins', sans-serif;
+}
+
+#icon{
+  display: block;
+  position: absolute;
+  right: 15px;
+  color: #000;
+  top: 20px;
+  transform: scale(2);
+}
+
+nav a:link{
+	color: white;
+	text-decoration: none;
+}
+
+nav a:visited{
+	color: white;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color: dimgray;
+	text-decoration: none;
+}
+
+nav a:selectedlink{
+	color: dimgray;
+	text-decoration: none;
+}
+
+#site{
+  font-family: 'Khula', sans-serif;
+  font-size: 16px;
+  width: 70%;
+  margin: 60px auto 0 auto;
+}
+
+#title{
+  margin: 40px 0 0 0;
+}
+
+h1{
+  font-size: 60px;
+  text-align: center;
+}
+
+h2{
+  font-size: 32px;
+  color: #888;
+  text-align: center;
+}
+
+#content{
+  width: 70%;
+  margin: 25px auto 0 auto;
+  font-size: 26px;
+}
+
+#content a:link{
+	color: black;
+	text-decoration: underline;
+}
+
+#content a:visited{
+	color: black;
+	text-decoration: underline;
+}
+
+#content a:hover{
+	color: dimgray;
+	text-decoration: none;
+}
+
+#content a:selectedlink{
+	color: dimgray;
+	text-decoration: none;
+}
+
+.para{
+  margin: 35px 0 35px 0;
+}
+
+#searchimg{
+  text-align: center;
+}
+
+.projimg > img{
+  vertical-align: middle;
+}
+
+#fullimg{
+  margin: 0 0 60px 0;
+}
+
+@media (max-width: 992px){
+  
+  #site{
+    width: 90%;
+  }
+  
+  #content{
+    width: 80%;
+  }
+  
+  #mob-navbar{
+    visibility: visible;
+    position: relative;
+  }
+  
+  #main-nav{
+    visibility: hidden;
+    position: absolute;
+  }
+  
+  #myLinks a{
+    font-size: 20px;
+  }
+  
+  #icon{
+    top: -40px;
+  }
+}

@@ -1,0 +1,136 @@
+nav
+{
+	font-family: 'Poppins', sans-serif;
+	font-size: 2.5vw;
+	text-align: right;
+	background-color: black;
+	border-bottom: 1px solid white;
+	word-spacing: 5px;
+	padding-right: 1rem;
+}
+
+a:link
+{
+	color: white;
+	text-decoration: none;
+}
+
+a:visited
+{
+	color: white;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: dimgray;
+	text-decoration: none;
+}
+
+a:selectedlink
+{
+	color: dimgray;
+	text-decoration: none;
+}
+
+body
+{
+	margin: 0;
+}
+
+.container
+{
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	column-count: 2;
+	text-align: center;
+
+}
+
+#pers1
+{
+	width: 40%;
+}
+
+#pers2
+{
+	width: 80%;
+}
+
+#pers1:hover, #pers2:hover
+{
+	filter: drop-shadow(14px 5px 7px grey);
+	transition: .4s;
+	transform: scale(1.04);
+}
+
+.modal
+{
+	display: none;/*MESS WITH LATER */
+	position: fixed;/*MESS WITH LATER */
+	z-index: 1;/*MESS WITH LATER */
+	padding-top: 100px; /*MESS WITH LATER */
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: black;
+	background-color: rgba(0,0,0,0.9)	
+}
+
+.modal-content
+{
+	margin:auto;
+	display:block;
+	width:80%;
+	max-width: 700px;
+}
+
+#caption
+{
+	margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}

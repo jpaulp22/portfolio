@@ -4,12 +4,18 @@
 }
 
 body{
-  background-image: url("Images/portalimg.JPG");
+  background-image: url("Images/landingimage-large.JPG");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-color: #000;
   overflow: hidden;
+  opacity: 0;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s;
+  -moz-transition: opacity 2s;
+  -ms-transition: opacity 2s;
+  -o-transition: opacity 2s;
 }
 
 #main-nav{
@@ -52,6 +58,10 @@ body{
   top: 20px;
   color: #fff;
   transform: scale(2);
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
 }
 
 #mainLink{
@@ -67,26 +77,35 @@ body{
 }
 
 a:link{
-	color: white;
+	color: #fff;
 	text-decoration: none;
 }
 
 a:visited{
-	color: white;
+	color: #fff;
 	text-decoration: none;
 }
 
 a:hover{
-	color: dimgray;
-	text-decoration: none; 
+  color: #696969;
+  text-decoration: none;
+  transition: color .5s;
+  -webkit-transition: color .5s;
+  -moz-transition: color .5s;
+  -ms-transition: color .5s;
+  -o-transition: color .5s;
 }
 
 a:selectedlink{
-	color: dimgray;
+	color: #696969;
 	text-decoration: none;
 }
 
 @media (max-width: 992px){
+  body{
+    background-image: url('Images/landingimage-medium.jpg');
+  }
+
   #mob-navbar{
     visibility: visible;
     position: relative;
@@ -99,5 +118,11 @@ a:selectedlink{
   
   #myLinks a{
     font-size: 20px;
+  }
+}
+
+@media (max-width: 720px){
+  body{
+    background-image: url('Images/landingimage-small.jpg');
   }
 }

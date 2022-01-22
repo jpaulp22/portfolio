@@ -41,7 +41,7 @@
     <meta name="msapplication-TileImage" content="images/favs/ms-icon-144x144.png">
   </head>
 	
-  <body>
+  <body onload="document.body.style.opacity='1'">
     <nav id="main-nav">
       <a href="index.html" title="Portal">HOME</a>
       <a href="projects.html" title="Projects">PROJECTS</a>
@@ -64,7 +64,7 @@
     </nav>
 
     <div id="site">
-      <div id="headerimg"><img src="Images/aboutheader.jpg" alt="" id="jp" width="100%"></div>
+      <div id="headerimg"><img src="Images/aboutheader-large.jpg" alt="" id="jp" width="100%"></div>
       <div id="bio">
         <h1>
             Web Designer. Musician. Vlogger.
@@ -107,11 +107,11 @@
         if (x.style.display === "block") {
           x.style.display = "none";
           y.style.color = "#000";
-          y.style.top = "20px";
+          y.style.top = "";
         } else {
           x.style.display = "block";
           y.style.color = "#fff";
-          y.style.top = "20px";
+          y.style.top = "";
         }
       }
     </script>

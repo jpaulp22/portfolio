@@ -3,6 +3,15 @@
   padding: 0;
 }
 
+body{
+  opacity: 0;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s;
+  -moz-transition: opacity 2s;
+  -ms-transition: opacity 2s;
+  -o-transition: opacity 2s;
+}
+
 #main-nav{
   font-family: 'Poppins', sans-serif;
   font-size: calc(1.4vw + 1.3em);
@@ -46,28 +55,33 @@
 }
 
 a:link{
-	color: white;
+	color: #fff;
 	text-decoration: none;
 }
 
 a:visited{
-	color: white;
+	color: #fff;
 	text-decoration: none;
 }
 
 a:hover{
-	color: dimgray;
-	text-decoration: none;
+  color: #696969;
+  text-decoration: none;
+  transition: color .5s;
+  -webkit-transition: color .5s;
+  -moz-transition: color .5s;
+  -ms-transition: color .5s;
+  -o-transition: color .5s;
 }
 
 a:selectedlink{
-	color: dimgray;
+	color: #696969;
 	text-decoration: none;
 }
 
 #site{
   width: 94%;
-  margin: 60px auto 0 auto;
+  margin: 60px auto 60px auto;
 }
 div > img{
   width: 100%;
